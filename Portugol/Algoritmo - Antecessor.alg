@@ -1,14 +1,14 @@
+//Algoritmo mostra o numÃ©ro que antecede o valor digitado pelo usuÃ¡rio
+//Desenvolvido por Leonardo Jacon - @leojacondev
+//Publicado em GitHub.com/leojacondev/algoritmos
+//Data: 12/03/2019
 algoritmo "Numero Antecessor"
-// Função :
-// Autor :
-// Data : 12/03/2019
-// Seção de Declarações 
 var
    numero, antecessor: real
 inicio
-// Seção de Comandos 
-escreval("Digite o número:")
+// SeÃ§Ã£o de Comandos 
+escreval("Digite o nÃºmero:")
 leia(numero)
 antecessor <- numero - 1
-escreval("O Antecessor é:", antecessor)
+escreval("O Antecessor Ã©:", antecessor)
 fimalgoritmo
