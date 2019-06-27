@@ -6,7 +6,6 @@ algoritmo "Tabuada"
 var
    num, i, resultado: inteiro
 inicio
-// Seção de Comandos
 escreval("Digite o número para ver sua tabuada")
 leia(num)
 para i de 1 ate 10 faca
