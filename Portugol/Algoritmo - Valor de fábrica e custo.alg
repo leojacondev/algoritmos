@@ -1,13 +1,12 @@
-algoritmo "Valor de Custo e Fábrica"
-// Função :
-// Autor :
-// Data : 12/03/2019
-// Seção de Declarações 
+//Algoritmo calcula a o valor de final de produto aplicando impostos de 45% e 28%
+//Desenvolvido por Leonardo Jacon - @leojacondev
+//Publicado em GitHub.com/leojacondev/algoritmos
+//Data: 12/03/2019
+algoritmo "Valor de Custo e FÃ¡brica" 
 var
    cfabrica, d, i, cfinal: real
 inicio
-// Seção de Comandos
-escreval("Digite o custo de fábrica")
+escreval("Digite o custo de fÃ¡brica")
 leia(cfabrica)
 d <- cfabrica * 28 / 100
 i <- cfabrica * 45 / 100
