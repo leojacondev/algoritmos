@@ -1,13 +1,12 @@
-algoritmo "Calculo da ¡rea do TrapÈzio"
-// FunÁ„o :
-// Autor :
-// Data : 12/03/2019
-// SeÁ„o de DeclaraÁıes 
+//Algoritmo calcula a √°rea de um trap√©zio utilizando dados de entrada do usu√°rio
+//Desenvolvido por Leonardo Jacon - @leojacondev
+//Publicado em GitHub.com/leojacondev/algoritmos
+//Data: 12/03/2019
+algoritmo "Calculo da √Årea do Trap√©zio"
 var
    bmaior, bmenor, altura, area, perimetro: real
 inicio
-// SeÁ„o de Comandos
-escreval("Ol·! Vamos calcular a ·rea e o perÌmetro do TrapÈzio!")
+escreval("Ol√°! Vamos calcular a √°rea e o per√≠metro do Trap√©zio!")
 escreval("Digite o valor de Base Maior:")
 leia(bmaior)
 escreval("Digite o valor de Base Menor:")
@@ -16,7 +15,7 @@ escreval("Digite o valor de Altura:")
 leia(altura)
 area <- ((bmaior + bmenor) * altura) / 2
 perimetro <- (bmaior + bmenor) + 2 * altura
-escreval("¡rea:", area)
-escreval("PerÌmetro:", perimetro)
+escreval("√Årea:", area)
+escreval("Per√≠metro:", perimetro)
 escreval("Obrigado!")
 fimalgoritmo
