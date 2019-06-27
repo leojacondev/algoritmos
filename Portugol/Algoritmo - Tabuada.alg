@@ -1,13 +1,13 @@
+//Algoritmo calcula a tabuada de um nÃºmero
+//Desenvolvido por Leonardo Jacon - @leojacondev
+//Publicado em GitHub.com/leojacondev/algoritmos
+//Data: 12/03/2019
 algoritmo "Tabuada"
-// Função :
-// Autor :
-// Data : 12/03/2019
-// Seção de Declarações 
 var
    num, i, resultado: inteiro
 inicio
-// Seção de Comandos
-escreval("Digite o número para ver sua tabuada")
+// SeÃ§Ã£o de Comandos
+escreval("Digite o nÃºmero para ver sua tabuada")
 leia(num)
 para i de 1 ate 10 faca
   resultado <- num * i
