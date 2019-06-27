@@ -1,8 +1,8 @@
-algoritmo "Azulejos na Parede"
-// Função :
-// Autor :
-// Data : 12/03/2019
-// Seção de Declarações 
+//Algoritmo calcula a quantidade de azulejos de base e altura 0.4cm serÃ£o necessÃ¡rios para cobrir uma parede de base e altura determinada pelo usuÃ¡rio
+//Desenvolvido por Leonardo Jacon - @leojacondev
+//Publicado em GitHub.com/leojacondev/algoritmos
+//Data: 12/03/2019
+algoritmo "Azulejos na Parede" 
 var
    ap, lp, areap, qa: real
 inicio
@@ -12,5 +12,5 @@ escreva("Digite a largura da parede: ")
 leia(lp)
 areap <- ap * lp
 qa <- areap / (0.4 * 0.4)
-escreval("É necessário", qa, " azulejos para cobrir a parede.")
+escreval("Ã‰ necessÃ¡rio", qa, " azulejos para cobrir a parede.")
 fimalgoritmo
