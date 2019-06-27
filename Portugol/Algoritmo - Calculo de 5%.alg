@@ -1,22 +1,21 @@
-algoritmo "Aula - 20/02"
-// Função :
-// Autor :
-// Data : 20/02/2019
-// Seção de Declarações 
+//Algoritmo calcula a 5% de um valor utilizando dados de entrada do usuÃ¡rio
+//Desenvolvido por Leonardo Jacon - @leojacondev
+//Publicado em GitHub.com/leojacondev/algoritmos
+//Data: 12/03/2019
+algoritmo 
 var
   ID, COD, PRECO, QTD, total, co: real
 inicio
-// Seção de Comandos
-escreva("Insira o id do usuário:")
+escreva("Insira o id do usuÃ¡rio:")
 leia(ID)
-escreva("Insira o código do produto:")
+escreva("Insira o cÃ³digo do produto:")
 leia(COD)
-escreva("Insira o preço do produto:")
+escreva("Insira o preÃ§o do produto:")
 leia(PRECO)
 escreva("Insira a quantidade vendida:")
 leia(QTD)
 total <- PRECO * QTD
 co <- total * 5 / 100
-escreva("Comissão é: ", co)
+escreva("ComissÃ£o Ã©: ", co)
 
 fimalgoritmo
