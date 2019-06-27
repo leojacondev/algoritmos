@@ -1,20 +1,19 @@
+//Algoritmo calcula a idade do usuÃ¡rio em dias (com base em 2019, sem considerar anos bissextos)
+//Desenvolvido por Leonardo Jacon - @leojacondev
+//Publicado em GitHub.com/leojacondev/algoritmos
+//Data: 12/03/2019
 algoritmo "idade em dias"
-// Função :
-// Autor :
-// Data : 12/03/2019
-// Seção de Declarações 
 var
    anos, meses, dias, anosemdias, mesesemdias, final: real
 inicio
-// Seção de Comandos 
-escreval("Digite quantos anos você tem:")
+escreval("Digite quantos anos vocÃª tem:")
 leia(anos)
-escreval("Digite quantos meses você tem:")
+escreval("Digite quantos meses vocÃª tem:")
 leia(meses)
-escreval("Digite quantos dias você tem:")
+escreval("Digite quantos dias vocÃª tem:")
 leia(dias)
 anosemdias <- anos * 365
 mesesemdias <- meses * 30
 final <- anosemdias + mesesemdias + dias
-escreval("Você tem:", final, " em dias")
+escreval("VocÃª tem:", final, " em dias")
 fimalgoritmo
