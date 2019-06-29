@@ -12,9 +12,9 @@ inicio
 escreval("Saldo inicial do jogo definido para U$500,00")
 escreval(" ")
 escreval("Como funciona:")
-escreval("Ao digitar o valor da sua aposta este programa irá sortear 3 números aleatórios")
-escreval("Caso você acerte 2 números iguais irá ganhar 2X o valor da sua aposta")
-escreval("Caso acerte os 3 números iguais irá ganhar 5x o valor da sua aposta!")
+escreval("Ao digitar o valor da sua aposta este programa irÃ¡ sortear 3 nÃºmeros aleatÃ³rios")
+escreval("Caso vocÃª acerte 2 nÃºmeros iguais irÃ¡ ganhar 2X o valor da sua aposta")
+escreval("Caso acerte os 3 nÃºmeros iguais irÃ¡ ganhar 5x o valor da sua aposta!")
 escreval(" ")
 escreval("Presione enter para iniciar")
 leia(start)
@@ -22,16 +22,16 @@ saldo <- 500
 limpatela
 enquanto (i = 0) faca
    limpatela
-   escreval("Seu saldo é: U$", saldo)
+   escreval("Seu saldo Ã©: US$", saldo)
    escreval("Digite um valor para apostar")
    leia(valor_aposta)
    se(valor_aposta > saldo) entao
       limpatela
-      escreval("Você não possuí saldo suficiente para essa aposta!")
+      escreval("VocÃª nÃ£o possuÃ­ saldo suficiente para essa aposta!")
    senao
-      jack1 <- Randi(10)
-      jack2 <- Randi(10)
-      jack3 <- Randi(10)
+      jack1 <- Randi(9)
+      jack2 <- Randi(9)
+      jack3 <- Randi(9)
 
       enquanto (j < 5) faca
          j <- j + 1
@@ -40,19 +40,21 @@ enquanto (i = 0) faca
       escreval("***** NUMEROS SORTEADOS ******")
       escreval("*** ", jack1, " *** ", jack2, " *** ", jack3, " ***")
       se(jack1 = jack2) e (jack1 = jack3) entao
-         escreval("PARABÉNS!!!! VOCÊ GANHOU 5X O VALOR DA SUA APOSTA!")
+         escreval("PARABÃ‰NS!!!! VOCÃŠ GANHOU 5X O VALOR DA SUA APOSTA!")
          saldo <- saldo + valor_aposta*5
+         valor_ganho <- valor_aposta*5
       senao
          se(jack1 = jack2) ou (jack1 = jack3) ou (jack2 = jack3) entao
-            escreval("PARABÉNS!!! VOCÊ GANHOU 2X O VALOR DA SUA APOSTA!")
+            escreval("PARABÃ‰NS!!! VOCÃŠ GANHOU 2X O VALOR DA SUA APOSTA!")
             saldo <- saldo + valor_aposta*2
+            valor_ganho <- valor_aposta*2
          senao
-            escreval("OPS! VOCÊ PERDEU!")
+            escreval("OPS! VOCÃŠ PERDEU!")
             saldo <- saldo - valor_aposta
             se(saldo <= 0) entao
                i <- 1
                limpatela
-               escreval("VOCÊ FICOU SEM DINHEIRO!! JOGO ENCERRADO!")
+               escreval("VOCÃŠ FICOU SEM DINHEIRO!! JOGO ENCERRADO!")
             fimse
          fimse
       fimse
@@ -62,7 +64,8 @@ enquanto (i = 0) faca
    se(is_game_started = "1") entao
       limpatela
       i <- 1
-      escreval("Jogo encerrado! Saldo final: U$", saldo)
+      escreval("Jogo encerrado! Saldo final: US$", saldo)
+      escreval("Total ganho durante o jogo: US$", valor_ganho)
    fimse
 
 fimenquanto
